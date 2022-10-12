@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../prism.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="../mark"></script>
+<script src="../markmapview"></script>
+
+<script>(()=>{setTimeout(()=>{const{markmap:Fe,mm:ur}=window,Fr=new Fe.Toolbar;Fr.attach(ur);const Dr=Fr.render();Dr.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(Dr)})})()</script>
+
+<script>((B,S,M,_)=>{
+    const I=B();
+    window.mm=I.Markmap.create("svg#mindmap",(S||I.deriveOptions)(_),M)})
+(()=>window.markmap,null,
+    {"type":"heading","depth":0,"payload":{"lines":[0,1]},
+        "content":"（1）血液组成",
+        "children":[{"type":"fence","depth":1, "content":"<pre class=\"language-bash\"><code class=\"language-bash\">记忆技巧： 血清 缺 少 某些凝血因子，如1、2、5、8。\n</code></pre>\n"},
+            {"type":"heading",
+                "depth":1,
+                "payload":{"lines":[12,13]},
+                "content":"全血",
+                "children":[{"type":"list_item",
+                    "depth":2,"payload":{"lines":[13,14]},
+                    "content":"适用于临床血液学检查，如血细胞 <m>计数、分类和形态</m>  学检查等。"}]},
+            {"type":"heading",
+                "depth":1,
+                "payload":{"lines":[14,15]},
+                "content":"血浆",
+                "children":[{"type":"list_item","depth":2,"payload":{"lines":[15,16]},
+                    "content":"适用于血浆生理性和病理性化学成分的测定，特别是内分泌激素测定；"},
+                    {"type":"list_item","depth":2,"payload":{"lines":[16,17]},
+                        "content":"血浆除钙离子外，含有其他全部凝血因子，也适用于<code>血栓与止血</code><m>血栓与止血</m>的检查。"}]},
+            {"type":"heading",
+                "depth":1,
+                "payload":{"lines":[17,18]},
+                "content":"血清",
+                "children":[{"type":"list_item","depth":2,
+                    "payload":{"lines":[18,19]},
+                    "content":"适用于临床<code>化学</code>和临床<code>免疫</code><m>免疫</m>学检查。"},
+                    {"type":"list_item","depth":2,"payload":{"lines":[19,20]},
+                        "content":"适用于临床<m>化学</m>和临床<m>免疫</m><code>免疫</code>学检查。"}]}]},null)
+</script>
+
+</body>
+</html>
